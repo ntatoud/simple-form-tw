@@ -1,11 +1,11 @@
 # simple-form-tw
 Just an exercise from one of my courses
 
-## Prerequisites
+## Prerequisites
 - Have Node > 18.0 and npm installed.
 - Have mysql installed on your computer.
 
-## Setup the project 
+## Setup the project 
 1. Go to the folder 'backend' and in the terminal, run the commande `npm install`, it will install all the packages listed in package.json
 2. Setup mysql.
    - Launch mysql cli with root privileges : `sudo mysql`.
@@ -16,7 +16,7 @@ Just an exercise from one of my courses
    - Grant all privileges to this user so that there are no problems when requesting the database : `GRANT ALL PRIVILEGES ON <db_name>.* TO 'username'@'localhost';`
    - Replace the credentials for the database connexion in `backend/routers/form.js` with the credentials you used above.
   
-## Start the server
+## Start the server
 - Run `npm start` while in the `backend` folder
 - Go to `localhost:3000` on your browser.
 
