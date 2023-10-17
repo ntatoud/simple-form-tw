@@ -1,0 +1,98 @@
+<!-- Author : Noé TATOUD -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Simple form !</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ======= Form ======= -->
+      <section id="form" class="form">
+        <div class="form-container">
+          <form action="/" method="post" role="form">
+            <div class="form-group">
+              <label for="name">Nombre y appelido</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ex : Steve JOBS"
+                maxlength="20"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Fecha de Hoy</label>
+              <input
+                type="text"
+                name="date"
+                id="date"
+                placeholder="Ex: 15/10/2023"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Edad</label>
+              <input
+                type="text"
+                name="age"
+                id="age"
+                placeholder="Ex: 24"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Numero de DNI</label>
+              <input
+                type="text"
+                name="idcard"
+                id="idcard"
+                placeholder="Ex : 1426586295598"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Pais</label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="Ex : Spain"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Ciudad</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Ex: Almeria"
+                required
+              />
+            </div>
+            <div class="submit">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Write here all your restrictions for the form.
+      const nameInput = document.getElementById("name");
+      nameInput.addEventListener("change", (event) => {
+        nameInput.value = nameInput.value.trim();
+      });
+    </script>
+  </body>
+</html>
+d

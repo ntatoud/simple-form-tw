@@ -1,0 +1,12 @@
+USE db_form;
+
+CREATE TABLE cliente ( 
+    name VARCHAR(20),
+    date VARCHAR(10),
+    age VARCHAR(3),
+    dni VARCHAR(15),
+    country VARCHAR(20),
+    city VARCHAR(20)
+);
+
+INSERT INTO cliente (name, date, age, dni, country, city) VALUES ("Noé TATOUD", "16/10/2023", "21", "29898982985", "Spain", "Almeria");
